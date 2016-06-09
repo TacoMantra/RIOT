@@ -1,0 +1,25 @@
+{
+  "name": "RIOT",
+  "version": "1.0.0",
+  "description": "Visual UI to track and maintain resources for MyWebGrocer retailer clients.",
+  "main": "grunt",
+  "dependencies": {
+    "jquery": "2.2.3",
+    "bootstrap-sass": "3.3.6",
+    "font-awesome": "4.6.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "clean-css": "^3.4.12",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-processhtml": "^0.3.13",
+    "grunt-autoprefixer": "^3.0.4",
+    "http-server": "^0.9.0"
+  },
+  "author": "Jon Miller <jomiller@MyWebGrocer.com>",
+  "private": true,
+  "license": "http://www.opensource.org/licenses/mit-license.php"
+}
