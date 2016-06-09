@@ -18,6 +18,29 @@
   </head>
 
   <body>
+    <header>
+      <div class="logo">
+        <h1><a href="index.html">RIOT - Retailer IT Optimized Tracker</a></h1>
+      </div><!-- /logo -->
+
+      <nav class="main-nav"><a href="retailer-sel.html">Add/Edit</a></nav>
+    </header>
+
+    <nav class="retailer-list">
+      <ul>
+        <li><a href="retailer.html?retailer=retailer1">Retailer 1</a></li>
+        <li><a href="retailer.html?retailer=retailer2">Retailer 2</a></li>
+        <li><a href="retailer.html?retailer=retailer3">Retailer 3</a></li>
+      </ul>
+    </nav>
+
+    <section class="serverSearch">
+      <input type="search" id="serverSearch-input" placeholder="Search for a Server by Name">
+      <button id="serverSearch-submit">Search</button>
+    </section>
+
+    <div class="footer noPrint">&copy; Copyright 2016 MyWebGrocer Inc. All Rights Reserved</div>
+
     <!-- build:js js/vendor/jquery.min.js -->
     <script src="js/vendor/jquery.js"></script>
     <!-- /build -->
