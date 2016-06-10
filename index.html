@@ -17,32 +17,47 @@
 
   <body>
     <header>
-      <div class="logo">
-        <h1><a href="index.html">RIOT - Retailer IT Optimized Tracker</a></h1>
-      </div><!-- /logo -->
+      <div class="header-container">
+        <div class="header-row">
+          <div class="logo">
+            <h1><a href="index.html">RIOT - Retailer IT Optimized Tracker</a></h1>
+          </div><!-- /logo -->
 
-      <nav class="main-nav"><a href="retailer-sel.html">Add/Edit</a></nav>
+          <!-- <nav class="main-nav"><a href="retailer-sel.html">Add/Edit</a></nav> -->          
+        </div>
+      </div>
     </header>
 
-    <nav class="retailer-list">
-      <ul>
-        <li><a href="retailer.html?retailer=retailer1">Retailer 1</a></li>
-        <li><a href="retailer.html?retailer=retailer2">Retailer 2</a></li>
-        <li><a href="retailer.html?retailer=retailer3">Retailer 3</a></li>
-      </ul>
-    </nav>
+    <div class="main-container">
+      <div class="main-row">
+        <nav class="retailer-list-section">
+          <ul id="retailer-list">
+            <h2>Retailers</h2>
+          </ul>
+        </nav>
 
-    <section class="serverSearch">
-      <input type="search" id="serverSearch-input" placeholder="Search for a Server by Name">
-      <button id="serverSearch-submit">Search</button>
-    </section>
+        <section class="serverSearch">
+          <div class="serverSearch-row">
+            <div class="serverSearch-input">
+              <input type="search" class="search-input" id="serverSearch" placeholder="Search for a Server by Name">
+            </div>
+            <div class="serverSearch-btn">
+              <button class="btn btn-primary" id="serverSearch-submit">Search</button>
+            </div>
+          </div>
+        </section>        
+      </div><!-- /row -->
+    </div><!-- /container -->
 
-    <div class="footer noPrint">&copy; Copyright 2016 MyWebGrocer Inc. All Rights Reserved</div>
+
+    <footer>&copy; Copyright 2016 MyWebGrocer Inc. All Rights Reserved</footer>
 
     <script src="js/vendor/jquery.min.js"></script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/search.js"></script>
+
+    <script src="js/show-retailers.js"></script>
   </body>
 </html>

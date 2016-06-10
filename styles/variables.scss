@@ -7,6 +7,9 @@
 @import "bootstrap/buttons.scss";
 
 // Colors
+$neutral-dark: #666;
+$neutral-light: lighten($neutral-dark, 30%);
+$lt-grey: #F0F0F0;
 
 // Breakpoints
 $xs: $screen-xs-min;

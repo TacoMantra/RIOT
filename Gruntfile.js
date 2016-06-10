@@ -34,13 +34,13 @@ module.exports = function(grunt) {
       }
     },
     // JS compression
-    uglify: {
-      dist: {
-        files: {
-          'js/app.min.js': ['js/app.js']
-        }
-      }
-    },
+    // uglify: {
+    //   dist: {
+    //     files: {
+    //       'js/app.min.js': ['js/app.js']
+    //     }
+    //   }
+    // },
     // JSHint
     jshint: {
       files: {
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
@@ -97,5 +97,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
   // Production task.
-  grunt.registerTask('prod', ['sass:production', 'autoprefixer', 'uglify', 'processhtml']);
+  grunt.registerTask('prod', ['sass:production', 'autoprefixer', 'processhtml']);
 };

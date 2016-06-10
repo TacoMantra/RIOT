@@ -18,6 +18,41 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-container">
+        <div class="header-row">
+          <div class="logo">
+            <h1><a href="index.html">RIOT - Retailer IT Optimized Tracker</a></h1>
+          </div><!-- /logo -->
+
+          <!-- <nav class="main-nav"><a href="retailer-sel.html">Add/Edit</a></nav>    -->       
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="main-row">
+        <h1 class="page-title" id="server-headline"></h1>
+        <div class="server-section">
+          <div class="server-details">
+            <div class="server-detail" id="type-detail-server">
+              <h4>Server Type</h4>
+              <ul id="serverType-detail-list" class="attr-list"></ul>
+            </div>         
+            <div class="server-detail" id="ip-detail-server">
+              <h4>IP Addresses</h4>
+              <ul id="ip-detail-list" class="attr-list"></ul>
+            </div>
+            <div class="server-detail" id="apps-detail-server">
+              <h4>Applications</h4>
+              <ul id="apps-detail-list" class="attr-list"></ul>
+            </div>
+          </div>      
+        </div><!-- /server-section -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+    <footer>&copy; Copyright 2016 MyWebGrocer Inc. All Rights Reserved</footer>
+
     <!-- build:js js/vendor/jquery.min.js -->
     <script src="js/vendor/jquery.js"></script>
     <!-- /build -->
@@ -26,8 +61,6 @@
     <script src="js/vendor/bootstrap.js"></script>
     <!-- /build -->
 
-    <!-- build:js js/app.min.js -->
-    <script src="js/app.js"></script>
-    <!-- /build -->
+    <script src="js/server-details.js"></script>
   </body>
 </html>

@@ -16,10 +16,102 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-container">
+        <div class="header-row">
+          <div class="logo">
+            <h1><a href="index.html">RIOT - Retailer IT Optimized Tracker</a></h1>
+          </div><!-- /logo -->
+
+          <!-- <nav class="main-nav"><a href="retailer-sel.html">Add/Edit</a></nav>    -->       
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="main-row">
+        <h1 class="page-title" id="retailer-headline"></h1>
+
+        <div class="env-section" id="dev-section">
+          <h2 class="env-title"><a href="#">Dev</a></h2>
+          <div class="env-detail">
+            <h3 class="server-title">Server Name</h3>
+            <div class="server-details">
+              <div class="server-detail" id="ip-detail-dev">
+                <h4>IP</h4>
+              </div>
+              <div class="server-detail" id="type-detail-dev">
+                <h4>Server Type</h4>
+              </div>
+              <div class="server-detail" id="apps-detail-dev">
+                <h4>Applications</h4>
+              </div>
+            </div>
+          </div><!-- /env-detail -->          
+        </div><!-- /env-section -->
+
+        <div class="env-section" id="qa-section">
+          <h2 class="env-title"><a href="#">QA</a></h2>
+          <div class="env-detail">
+            <h3 class="server-title">Server Name</h3>
+            <div class="server-details">
+              <div class="server-detail" id="ip-detail-qa">
+                <h4>IP</h4>
+              </div>
+              <div class="server-detail" id="type-detail-qa">
+                <h4>Server Type</h4>
+              </div>
+              <div class="server-detail" id="apps-detail-qa">
+                <h4>Applications</h4>
+              </div>
+            </div>
+          </div><!-- /env-detail -->          
+        </div><!-- /env-section -->
+
+        <div class="env-section" id="stage-section">
+          <h2 class="env-title"><a href="#">Staging</a></h2>
+          <div class="env-detail">
+            <h3 class="server-title">Server Name</h3>
+            <div class="server-details">
+              <div class="server-detail" id="ip-detail-stage">
+                <h4>IP</h4>
+              </div>
+              <div class="server-detail" id="type-detail-stage">
+                <h4>Server Type</h4>
+              </div>
+              <div class="server-detail" id="apps-detail-stage">
+                <h4>Applications</h4>
+              </div>
+            </div>
+          </div><!-- /env-detail -->          
+        </div><!-- /env-section -->
+        
+        <div class="env-section" id="prod-section">
+          <h2 class="env-title"><a href="#">Production</a></h2>
+          <div class="env-detail">
+            <h3 class="server-title">Server Name</h3>
+            <div class="server-details">
+              <div class="server-detail" id="ip-detail-prod">
+                <h4>IP</h4>
+              </div>
+              <div class="server-detail" id="type-detail-prod">
+                <h4>Server Type</h4>
+              </div>
+              <div class="server-detail" id="apps-detail-prod">
+                <h4>Applications</h4>
+              </div>
+            </div>
+          </div><!-- /env-detail -->          
+        </div><!-- /env-section -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+
+    <footer>&copy; Copyright 2016 MyWebGrocer Inc. All Rights Reserved</footer>
+
     <script src="js/vendor/jquery.min.js"></script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/retailer-populate.js"></script>
   </body>
 </html>

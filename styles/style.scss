@@ -2,4 +2,98 @@
 @import "typography.scss";
 
 body {
+	overflow-x: hidden;
+	font-size: 16px;
+}
+.header-container,
+.main-container,
+.footer-container {
+	@extend .container;
+}
+.header-row,
+.main-row,
+.footer-row {
+	@extend .row;
+}
+header {
+	h1 {
+		font-size: 0px;
+		width: 229px;
+		height: 120px;
+		background: url(../img/riotlogo_wht_sm.jpg) no-repeat;
+		margin: 15px 0;
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.page-title {
+	border-bottom: 1px solid $neutral-light;
+	padding-bottom: 20px;
+}
+footer {
+	text-align: center;
+	margin: 30px;
+	width: 100%;
+}
+.retailer-list-section {
+	@extend .col-sm-4;
+	background: $lt-grey;
+	ul {
+		list-style: none;
+		padding: 0px;
+	}
+}
+.serverSearch {
+	@extend .col-sm-8;
+}
+.serverSearch-row {
+	@extend .row;
+	.serverSearch-input {
+		@extend .col-xs-9;
+	}
+}
+.serverSearch-btn {
+	@extend .col-xs-3;
+	.btn {
+		width: 100%;
+		height: 36px;
+	}
+}
+.search-input {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
+.server-details {
+	@extend .row;	
+}
+.server-detail {
+	@extend .col-sm-4;
+	h4 {
+		border-bottom: 1px solid $neutral-dark;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+}
+.attr-list {
+	list-style: none;
+	padding: 15px;
+	max-height: 400px;
+	overflow: auto;
+	background: $lt-grey;
+}
+.server-list {
+	list-style: none;
+	padding: 0px;
+	font-size: 24px;
+
+	li {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $neutral-light;
+	}
 }
